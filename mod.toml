@@ -1,0 +1,24 @@
+[mod]
+id = "randomizer"
+name = "Randomizer"
+version = "1.0.0"
+author = "Kindle"
+description = "Shuffles items (always finishable) and enemies, per character: set up on the character creation screen, kept with the character."
+api = 1
+
+[permissions]
+modules = ["flags", "items", "player", "params", "maps", "events", "ui", "net"]
+
+# What a new character starts with on the creation screen's Randomizer page (it can be changed
+# there for each character). A character keeps what it was made with.
+[settings.items]
+type = "bool"
+label = "Randomize items"
+description = "New characters: shuffle pickups, rewards, drops and shops. The game can always be finished."
+default = false
+
+[settings.enemies]
+type = "bool"
+label = "Randomize enemies"
+description = "New characters: enemies of other types, from anywhere in the game."
+default = false
